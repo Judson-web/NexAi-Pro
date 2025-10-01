@@ -90,6 +90,6 @@ Here is a complete list of commands available in NexAi.
 
 ## 👤 Credit
 
-This bot was created with love by **Judson Saji**.
+This bot was created with love by:
 
 Credit: [VAMPIRE_KING_NO_1](https://t.me/VAMPIRE_KING_NO_1)
