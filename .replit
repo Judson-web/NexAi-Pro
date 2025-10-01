@@ -1,0 +1,39 @@
+# The command to run when the "Run" button is pressed.
+run = "npm run dev"
+
+# The main file of the project.
+entrypoint = "index.ts"
+modules = ["nodejs-20"]
+
+# Specifies the package manager configuration for TypeScript.
+[packager]
+language = "typescript"
+
+[languages.typescript]
+pattern = "**/*.ts"
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Bot"
+
+[[workflows.workflow]]
+name = "Bot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+
+[workflows.workflow.metadata]
+outputType = "console"
