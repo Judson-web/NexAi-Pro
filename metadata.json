@@ -1,0 +1,5 @@
+{
+  "name": "Telegram AI Bot",
+  "description": "A modular and extensible Telegram bot built with Node.js and TypeScript.",
+  "requestFramePermissions": []
+}
